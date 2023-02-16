@@ -10,7 +10,8 @@
 <body class="inscripcion">
     <section class="inscripcion_form_wrp">
         <form class="inscripcion_form" method="post">
-            <h1>Formulario de Registro</h1>
+            <h1>¡Bienvenido!</h1>
+            <p> Registrate aquì</p>
             <input type="text" name="nombre" placeholder="Nombre y Apellido">
             <input type="text" name="edad" placeholder="Edad">
             <input type="text" name="dni" placeholder="Dni">

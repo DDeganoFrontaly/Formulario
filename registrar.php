@@ -22,7 +22,7 @@ if (isset($_POST['register'])) {
             header("Location: $error");
         }
     } else {
-            ?> <h3>Campos Vacios</h3> <?php
+            ?> <h3 class="inscripcion_form_empty">Completar campos vacios</h3> <?php
     }
 }
 
