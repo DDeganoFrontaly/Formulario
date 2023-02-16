@@ -72,3 +72,39 @@
         }
     }
 }
+
+.ok{
+    &_body{
+        background-color: rgb(5, 180, 5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 130px 20px;
+        flex-direction: column;
+        h1{
+            font-size: 42px;
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        svg{
+            width: 150px;
+            height: 150px;
+            margin-bottom: 60px;
+        }
+        a{
+            font-size: 24px;
+            height: 60px;
+            color: rgb(5, 180, 5);
+            font-weight: 600;
+            text-decoration: none;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            padding: 0 20px;
+            
+        }
+    }
+}
