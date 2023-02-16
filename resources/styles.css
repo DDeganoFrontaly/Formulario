@@ -5,6 +5,7 @@
 
 .inscripcion {
   background-color: #e5e5e5;
+  overflow: hidden;
 }
 
 .inscripcion_form {
@@ -99,6 +100,7 @@
 }
 
 .ok_body {
+  overflow: hidden;
   background-color: #05b405;
   display: -webkit-box;
   display: -ms-flexbox;

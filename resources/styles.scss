@@ -5,6 +5,7 @@
 
 .inscripcion{
     background-color: #e5e5e5;
+    overflow: hidden;
     &_form{
         display: flex;
         flex-direction: column;
@@ -75,6 +76,7 @@
 
 .ok{
     &_body{
+        overflow: hidden;
         background-color: rgb(5, 180, 5);
         display: flex;
         justify-content: center;
