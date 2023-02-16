@@ -6,4 +6,57 @@
 .inscripcion {
   background-color: #f1f1f1;
 }
+
+.inscripcion_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 600px;
+}
+
+.inscripcion_form_wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 20px;
+  margin: 20px;
+}
+
+.inscripcion_form h1 {
+  font-size: 48px;
+  line-height: 52px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.inscripcion_form input {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 0px 20px;
+}
+
+.inscripcion_form_btn {
+  border-radius: 30px;
+  height: 60px;
+  background-color: cornflowerblue;
+  border: 2px solid cornflowerblue;
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+  max-width: 350px;
+}
 /*# sourceMappingURL=styles.css.map */

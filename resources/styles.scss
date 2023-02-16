@@ -5,4 +5,39 @@
 
 .inscripcion{
     background-color: #f1f1f1;
+    &_form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 600px;
+        &_wrp{
+            display: flex;
+            justify-content: center;
+            padding: 30px 20px;
+            margin: 20px;
+        }
+        h1{
+            font-size: 48px;
+            line-height: 52px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        input{
+            height: 40px;
+            width: 100%;
+            margin-bottom: 30px;
+            padding: 0px 20px;
+        }
+        &_btn{
+            border-radius: 30px;
+            height: 60px;
+            background-color: cornflowerblue;
+            border: 2px solid cornflowerblue;
+            color: white;
+            font-weight: 500;
+            font-size: 22px;
+            max-width: 350px;
+        }
+    }
 }
