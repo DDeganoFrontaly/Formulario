@@ -4,38 +4,38 @@
 }
 
 .inscripcion {
-  background-color: #e5e5e5;
+  /*background-color: #e5e5e5;*/
+  background: url(../img/9kH3M4E.jpeg);
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
-
 .inscripcion_form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .inscripcion_form_wrp {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 30px 20px;
   margin: 20px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px 30px;
+  margin: 60px auto;
+  position: relative;
+  width: 450px;
+  background: #f1f1f1;
+  border-radius: 12px;
+  border: 2px solid black;
+  /*box-shadow: 8px 8px 9px 5px #8c8a8a;*/
 }
-
 .inscripcion_form h1 {
   font-size: 38px;
   line-height: 52px;
@@ -43,29 +43,32 @@
   text-align: center;
   text-transform: uppercase;
 }
-
 .inscripcion_form p {
   margin-bottom: 60px;
   font-size: 24px;
   font-weight: 600;
   border-bottom: 2px solid black;
 }
-
 .inscripcion_form input {
   height: 40px;
   width: 100%;
   margin-bottom: 30px;
   padding: 0px 20px;
-  -webkit-box-shadow: 5px 7px 4px 0px #8a8989;
-          box-shadow: 5px 7px 4px 0px #8a8989;
+  box-shadow: 5px 7px 4px 0px #8a8989;
   border: none;
   border-radius: 4px;
+  font-weight: 400;
 }
-
+.inscripcion_form input::-moz-placeholder {
+  color: black;
+}
+.inscripcion_form input::placeholder {
+  color: black;
+}
 .inscripcion_form_empty {
   position: absolute;
   top: 146px;
-  background-color: #f55c5c;
+  background-color: rgb(245, 92, 92);
   color: white;
   border-radius: 4px;
   padding: 2px 15px;
@@ -73,11 +76,9 @@
   right: 0;
   margin: auto;
   text-align: center;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
-
 .inscripcion_form_btn {
   border-radius: 30px;
   height: 60px;
@@ -90,64 +91,61 @@
   margin-top: 20px;
   cursor: pointer;
 }
-
 .inscripcion_form_btn:hover {
-  background-color: #3272e9;
-  border: 2px solid #3272e9;
+  background-color: rgb(50, 114, 233);
+  border: 2px solid rgb(50, 114, 233);
   margin-top: 22px;
-  -webkit-box-shadow: 5px 5px 4px 0px #8a8989;
-          box-shadow: 5px 5px 4px 0px #8a8989;
+  box-shadow: 5px 5px 4px 0px #8a8989;
+  margin-bottom: 28px;
 }
 
 .ok_body {
   overflow: hidden;
-  background-color: #05b405;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(5, 180, 5);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 130px 20px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .ok_body h1 {
   font-size: 42px;
   color: white;
   text-align: center;
   margin-bottom: 30px;
 }
-
 .ok_body svg {
   width: 150px;
   height: 150px;
   margin-bottom: 60px;
 }
-
 .ok_body a {
   font-size: 24px;
   height: 60px;
-  color: #05b405;
+  color: rgb(5, 180, 5);
   font-weight: 600;
   text-decoration: none;
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 30px;
   padding: 0 20px;
 }
-/*# sourceMappingURL=styles.css.map */
+
+@media only screen and (max-width: 1024px) {
+  .inscripcion {
+    background: #f1f1f1;
+  }
+  .inscripcion_form_wrp {
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    padding: 50px 0;
+    height: auto;
+    border: none;
+  }
+  .inscripcion_form_empty {
+    top: 150px;
+  }
+}/*# sourceMappingURL=styles.css.map */

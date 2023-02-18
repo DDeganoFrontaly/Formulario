@@ -13,8 +13,7 @@ if (isset($_POST['register'])) {
         $dni = trim($_POST['dni']);
         $tel = trim($_POST['telefono']);
         $fecha_reg = date("d/m/y");
-        /*$consulta = "INSERT INTO datos(nombre, email, fecha_reg) VALUES ('$nombre','$email','$fecha_reg')";*/
-        $consulta = "INSERT INTO datos(nombre, edad, dni, email, telefono, fecha_reg) VALUES ('$nombre','$edad','$dni','$email','$tel','$fecha_reg')";
+        $consulta = "INSERT INTO formulario(nombre, edad, dni, email, telefono, fecha_reg) VALUES ('$nombre','$edad','$dni','$email','$tel','$fecha_reg')";
         $resultado = mysqli_query($conex,$consulta);
         if ($resultado) {
             header("Location: $success");

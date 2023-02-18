@@ -4,8 +4,13 @@
 }
 
 .inscripcion{
-    background-color: #e5e5e5;
+    /*background-color: #e5e5e5;*/
+    background: url(../img/9kH3M4E.jpeg);
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
     &_form{
         display: flex;
         flex-direction: column;
@@ -17,6 +22,16 @@
             padding: 30px 20px;
             margin: 20px;
             position: relative;
+            display: flex;
+            justify-content: center;
+            padding: 50px 20px 30px;
+            margin: 60px auto;
+            position: relative;
+            width: 450px;
+            background: #f1f1f1;
+            border-radius: 12px;
+            border: 2px solid black;
+            /*box-shadow: 8px 8px 9px 5px #8c8a8a;*/
         }
         h1{
             font-size: 38px;
@@ -39,6 +54,11 @@
             box-shadow: 5px 7px 4px 0px #8a8989;
             border: none;
             border-radius: 4px;
+            font-weight: 400;
+            &::placeholder{
+                
+                color: black;
+            }
         }
         &_empty{
             position: absolute;
@@ -69,6 +89,7 @@
                 border: 2px solid rgb(50, 114, 233);
                 margin-top: 22px;
                 box-shadow: 5px 5px 4px 0px #8a8989;
+                margin-bottom: 28px;
             }
         }
     }
@@ -107,6 +128,26 @@
             border-radius: 30px;
             padding: 0 20px;
             
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .inscripcion{
+        background: #f1f1f1;
+        &_form{
+            &_wrp{
+                margin: 0;
+                width: 100%;
+                border-radius: 0;
+                padding: 50px 0;
+                height: auto;
+                border: none;
+
+            }
+            &_empty{
+                top: 150px;
+            }
         }
     }
 }
